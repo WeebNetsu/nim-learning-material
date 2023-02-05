@@ -1,0 +1,9 @@
+<person>
+    <name>Jack</name>
+    <surname>Magee</surname>
+    <address>
+        <street>14 Pall Mall str.</street>
+        <local>New York</local>
+        <postalCode>1932</postalCode>
+    </address>
+</person>

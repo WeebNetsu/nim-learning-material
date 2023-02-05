@@ -1,0 +1,45 @@
+[FILMED]1. Hello World + 6. Comments
+[FILMED]2. Variables
+[FILMED]5. Strings
+[FILMED]3. Math + 4. Casting [math]
+[FILMED]17. User Input
+[FILMED]11. If Statements
+[FILMED]20. Block Statements [if statement]
+[FILMED]12 Case Statements [if statement]
+[FILMED]8. Arrays
+[FILMED]28. Sequences [if statements, Arrays]
+[FILMED]31. Tuples [if statement]
+[FILMED]29. Sets [if statements]
+[FILMED]38. Strutils [sets, arrays]
+26. Algorithm Module [arrays, sequences, tuples]
+34. Math Module [arrays]
+39. Rationals Module [Math Module]
+7. While Loops [if statement]
+13. For Loops [arrays, sequences, tuples, math]
+30. Tables [if statement, tuples, for loops]
+16. Working With Files
+37. Ropes [strings, arrays, Working with Files]
+10. Enums [if statements]
+14. Procedures [Math, arrays, sequences, tables, tuples]
+9. Custom Types [arrays, sequences, tables, tuples]
+15. Modules [Procedures, Strings]
+25. Useful Small Modules [arrays, sequences, tables, tuples]
+18. OOP [Procedures, arrays, sequences, tables, tuples, If Statements]
+22. Exception/Error Handling [OOP, If Statements, Working With Files, Procedures]
+33. OS Module [loops, arrays, sequences, tables, tuples]
+32. Terminal
+23. Templates [If Statements, Procedures, Working With Files]
+24. Pragmas [Procedures, Math]
+36. Options Module [if statements, Procedures, loops]
+21. Working with JSON [OOP, arrays, sequences, tables, tuples, Options Module, Working With Files]
+27. URI Module
+35. Times Module
+40. Colors Module [If Statements]
+41. Parsecfg Module [Loops, case statements]
+44. Working with CSV [sequences]
+42. Working with XML [sequences, tables, functions]
+45. Strscans Module [If statements, re (not scripted yet)]
+nimble (package manager) (use NiGui as example https://nimble.directory/pkg/nigui)
+43. Coroutines
+
+NOTE: When doing asynchttpserver, also display jester and prologue as alternatives to create an API
