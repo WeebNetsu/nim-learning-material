@@ -11,10 +11,10 @@
 [FILMED]31. Tuples [if statement]
 [FILMED]29. Sets [if statements]
 [FILMED]38. Strutils [sets, arrays]
-26. Algorithm Module [arrays, sequences, tuples]
-34. Math Module [arrays]
-39. Rationals Module [Math Module]
-7. While Loops [if statement]
+[FILMED]26. Algorithm Module [arrays, sequences, tuples]
+[FILMED]34. Math Module [arrays]
+[FILMED]39. Rationals Module [Math Module]
+[FILMED]7. While Loops [if statement]
 13. For Loops [arrays, sequences, tuples, math]
 30. Tables [if statement, tuples, for loops]
 16. Working With Files
@@ -26,6 +26,7 @@
 25. Useful Small Modules [arrays, sequences, tables, tuples]
 18. OOP [Procedures, arrays, sequences, tables, tuples, If Statements]
 22. Exception/Error Handling [OOP, If Statements, Working With Files, Procedures]
+46. Regex
 33. OS Module [loops, arrays, sequences, tables, tuples]
 32. Terminal
 23. Templates [If Statements, Procedures, Working With Files]
