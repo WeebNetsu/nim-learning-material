@@ -40,7 +40,8 @@
 44. Working with CSV [sequences]
 42. Working with XML [sequences, tables, functions]
 45. Strscans Module [If statements, re (not scripted yet)]
+47. Stats [Sequences]
 nimble (package manager) (use NiGui as example https://nimble.directory/pkg/nigui)
-43. Coroutines
+43. Coroutines [INCOMPLETE!!!]
 
 NOTE: When doing asynchttpserver, also display jester and prologue as alternatives to create an API
