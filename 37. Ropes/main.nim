@@ -13,19 +13,18 @@ echo b[5] # can get specific letter in rope
 echo len(b) # get rope length
 
 let c = rope(". And I like to eat it too!")
-echo b & c # concationation (can do ropes+strings as well)
+echo b & c # concatenation (can do ropes+strings as well)
 
-# !!!!!!!!!!!!!!! I ENDED HERE !!!!!!!!!!!!!!
 # add rope c to rope b
 b.add(c)
 echo b
 
-# can be used to concationate an Array of ropes
+# can be used to concatenate an Array of ropes
 echo &[rope("Hello "), rope("World")]
 
 let inFile: Rope = rope("Hello there, I am cool")
-# note you have to compile from inside this folder for below to work
-# will return false if file not found
+    # note you have to compile from inside this folder for below to work
+    # will return false if file not found
 echo equalsFile(inFile, "file.txt")
 
 var f: File = open("written.txt", fmWrite)

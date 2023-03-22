@@ -15,11 +15,11 @@
 [FILMED]34. Math Module [arrays]
 [FILMED]39. Rationals Module [Math Module]
 [FILMED]7. While Loops [if statement]
-13. For Loops [arrays, sequences, tuples, math]
-30. Tables [if statement, tuples, for loops]
-16. Working With Files
-37. Ropes [strings, arrays, Working with Files]
-10. Enums [if statements]
+[FILMED]13. For Loops [arrays, sequences, tuples, math]
+[FILMED]30. Tables [if statement, tuples, for loops]
+[FILMED]16. Working With Files
+[FILMED]37. Ropes [strings, arrays, Working with Files]
+[FILMED]10. Enums [if statements]
 14. Procedures [Math, arrays, sequences, tables, tuples]
 9. Custom Types [arrays, sequences, tables, tuples]
 15. Modules [Procedures, Strings]
