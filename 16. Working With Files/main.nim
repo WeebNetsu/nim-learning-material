@@ -15,6 +15,6 @@ echo lines
 writeFile("myFile.txt", "Hello\nWorld!\tI am here!\\")
 
 var a = open("myFile.txt", fmWrite) # open file in write mode
-# you can use fmAppend to append, fmRead to read, fmReadWrite to read and write
+                                    # you can use fmAppend to append, fmRead to read, fmReadWrite to read and write
 a.write("HEYO!") # write to file
 a.close()

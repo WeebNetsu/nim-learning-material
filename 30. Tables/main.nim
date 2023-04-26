@@ -3,12 +3,12 @@ import std/tables
 
 var
     # since there are multiple types of tables, we have to convert it to the one we want
-    user1 = { "username": "nick17740", "password": "p@sW04d" }.toTable()
+    user1 = {"username": "nick17740", "password": "p@sW04d"}.toTable()
     # tables are unordered by default, this increases its speed
     # the below is a table that keeps its order, at the cost of speed
-    user2 = { "username": "nick17740", "password": "p@sW04d" }.toOrderedTable()
+    user2 = {"username": "nick17740", "password": "p@sW04d"}.toOrderedTable()
     # the count table gives an additional parameter for displaying number of duplicates
-    user3 = { "username": "nick17740", "password": "p@sW04d", "username": "nick17740" }.toCountTable()
+    user3 = {"username": "nick17740", "password": "p@sW04d", "username": "nick17740"}.toCountTable()
 
 echo user1
 echo user1["username"]
@@ -24,10 +24,10 @@ if user2.hasKey("securityQuestion"): # check if key exists in table
 
 echo user3 # will show a 2 next to username, to display there are duplicates
 
-var 
-    friends = initTable[string, int]() # creates an empty table
-    letters = initCountTable[char]() # creats an empty count table
-    a = initOrderedTable[string, string]() # creats an empty ordered table
+var
+    friends = initTable[string, int]()     # creates an empty table
+    letters = initCountTable[char]()       # creates an empty count table
+    a = initOrderedTable[string, string]() # creates an empty ordered table
 
 friends["Jack"] = 18 # add data to table
 # string can also be converted to count table
@@ -43,7 +43,7 @@ echo friends
 letters.inc('H') # increments the amount at key 'H' (CountTables only)
 echo letters
 echo letters.largest() # returns the key (and value) with the highest count (value)
-echo letters.smallest() # oppisite of above
+echo letters.smallest() # opposite of above
 
 # note these functions can also work on other tables, not just count tables
 echo letters.contains('p') # true if item exists inside of table
@@ -66,7 +66,7 @@ let moreLetters = toCountTable("My name is Steve and I am very cool!")
 letters.merge(moreLetters) # merges 2 tables together
 echo letters
 
-letters.sort() # sorts in (value) decending order highest number to lowest
+letters.sort() # sorts in (value) descending order highest number to lowest
 echo letters
 
 for key in letters.keys(): # loop through the table keys

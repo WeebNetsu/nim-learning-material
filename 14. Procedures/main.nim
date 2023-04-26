@@ -31,12 +31,12 @@ proc getLargest(values: seq[int]): int =
 echo getLargest(@[1, 6, 9, 5, 2, -5, -9, 99, 7, 4])
 
 proc count(num: var int) =
-    # num: var int -> allowes the actual value that is passed in to be mutated
+    # num: var int -> allowed the actual value that is passed in to be mutated
     num += 1
 
 var number = 0
 
-count(number) # this will actually modify the number variabled because it was passed in with "var int"
+count(number) # this will actually modify the number variables because it was passed in with "var int"
 count(number)
 count(number)
 count(number)
@@ -70,7 +70,7 @@ var my_arr_2: array[5, int]
 # as a parameter, and you do NOT have to indicate the array size
 proc get_arr_len(arr: openArray[int]) =
     echo len(arr)
-    
+
 # no problem working with different sized arrays
 get_arr_len(my_arr_1)
 get_arr_len(my_arr_2)
@@ -82,19 +82,19 @@ proc print(data: varargs[string]) =
     for word in data:
         # &= -> append
         output &= word & " "
-    
+
     echo output
 
 print("Hello", "World", "I", "am", "here")
 
 # the `$` allows you to take in any 'type' in your varargs
-proc display(data: varargs[string, `$`]) = 
+proc display(data: varargs[string, `$`]) =
     for index in data:
         echo index
 
 display 1, "My world", @[22.1, 55.6, 44.8] # can take more than just strings
 
-proc `-`(x, y: int): int = # opperator overloading
+proc `-`(x, y: int): int = # operator overloading
     return x + y # the "-" wil now add
 
 echo 10 - 7 # 17, since we overloaded the "-" operator
@@ -128,13 +128,13 @@ speak(ghost, "BOO! What are you doing here?!")
 # speak(ghost, script) # will cause error because you cannot pass in a variable on static parameter!
 
 # anonymous function
-var summination = ( proc(num1, num2: int): int = num1 + num2 )
-echo summination(2, 6)
+var summation = (proc(num1, num2: int): int = num1 + num2)
+echo summation(2, 6)
 
 proc exec(someFunc: proc, x: int): int =
     return someFunc(x, 100)
 
-echo exec(( proc(num1, num2: int): int = num1 * num2 ), 55) # example of how an anonymous function can be useful
+echo exec((proc(num1, num2: int): int = num1 * num2), 55) # example of how an anonymous function can be useful
 
 # arrow functions
 import sugar # this is used to allow more syntax in Nim
