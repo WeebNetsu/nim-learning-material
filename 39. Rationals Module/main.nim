@@ -5,14 +5,14 @@ let a = 3 // 4 # 3 over 4
 echo $a # will convert to a string
 
 var b = 9 // 5
-echo a * b # will times the 2 rational numbes together
+echo a * b # will times the 2 rational numbers together
 # you of course also have /, +, -
 
 b -= 2 // 5 # will subtract 2/5 from 9/5
 # you of course also have *=, /= & +=
 echo b
 
-echo a > b 
+echo a > b
 # you of course also have <, >=, <=, ==, !=
 
 echo abs(-5//2) # returns absolute (positive) value
