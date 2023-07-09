@@ -25,7 +25,7 @@
 [FILMED]15. Modules [Procedures, Strings]
 [FILMED]25. Useful Small Modules [arrays, sequences, tables, tuples]
 [FILMED]18. OOP [Procedures, arrays, sequences, tables, tuples, If Statements]
-22. Exception/Error Handling [OOP, If Statements, Working With Files, Procedures]
+[FILMED]22. Exception/Error Handling [OOP, If Statements, Working With Files, Procedures]
 22. Exception/Error Handling [OOP, If Statements, Working With Files, Procedures] (PART 2)
 46. Regex
 33. OS Module [loops, arrays, sequences, tables, tuples]
@@ -46,12 +46,3 @@
 nimble (package manager) (use NiGui as example https://nimble.directory/pkg/nigui)
 
 NOTE: When doing asynchttpserver, also display jester and prologue as alternatives to create an API
-
-
-
-ADD:
-Pointers
-FFI
-Function Attributes {. this .}
-Templates
-Macros
