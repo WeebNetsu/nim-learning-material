@@ -8,10 +8,10 @@ for param in 1..paramCount(): # paramCount - number of parameters entered (nim r
 
 # useful constants
 echo CurDir # gives current directory symbol
-echo AltSep # uses alt path seperator
-echo DirSep # uses directory seperator (\\ on windows, / on mac/linux)
+echo AltSep # uses alt path separator
+echo DirSep # uses directory separator (\\ on windows, / on mac/linux)
 echo doslikeFileSystem # returns true if file system is dos-like (windows)
-echo ExeExt # returns the extention of an executable on the system
+echo ExeExt # returns the extension of an executable on the system
 # ExeExt will return nothing on Arch Linux, due to there not being
 # a valid executable file on Arch. ExeExt will however return 'exe' on windows
 echo ExeExts # return array of valid executable file extensions. On Arch
@@ -20,7 +20,7 @@ echo FileSystemCaseSensitive # true if file system is case sensitive
 echo invalidFilenameChars # returns invalid characters to have in file names
 echo invalidFilenames # returns array of invalid file names for the OS (Currently this is Windows only)
 echo ParDir # returns characters used to reference parent directory
-echo PathSep # character used to seperate components in the PATH variable
+echo PathSep # character used to separate components in the PATH variable
 
 echo "path" / "to" / "file" # / will add the strings together with '/'
 echo joinPath("my", "path", "to/file") # same as above
@@ -62,9 +62,9 @@ echo file.changeFileExt("html") # changes file extension
 echo file.changeFileExt("") # remove file extension
 
 var myPath: string = "/home/netsu/Documents"
-# below returns 0 if 2 paths are the SAME, it will return more than 0
-# if the paths are not the same. On a filesystem that is caseinsensitive,
-# the below will compare paths caseinsensitively
+    # below returns 0 if 2 paths are the SAME, it will return more than 0
+    # if the paths are not the same. On a filesystem that is caseinsensitive,
+    # the below will compare paths caseinsensitively
 echo cmpPaths(myPath, "/home/netsu/Documen")
 
 # below will copy a directory and it's content to a new location
@@ -87,7 +87,7 @@ echo existsOrCreateDir("My Directory")
 
 # the below can do 2 things.
 #   1 - Rename a directory
-#   2 - Move the CONTENTS of a direcory into another direcory (then delete original), 
+#   2 - Move the CONTENTS of a direcory into another direcory (then delete original),
 #       but ONLY if directory it is being moved to is EMPTY
 # moveDir("My Directory", "BRUH")
 
@@ -125,7 +125,7 @@ echo getFilePermissions("lolz.txt") # returns a files file permissions
 setFilePermissions("lolz.txt", {fpUserExec, fpUserWrite, fpUserRead})
 echo getFilePermissions("lolz.txt")
 setFilePermissions("lolz.txt", perms) # restore file permissions to default
-echo getFilePermissions("lolz.txt") 
+echo getFilePermissions("lolz.txt")
 echo getFileInfo("lolz.txt") # returns ton of file info
 echo getFileSize("main.nim") # file size in bytes
 
@@ -153,7 +153,7 @@ for path in loop_path.parentDirs():
     echo path
 
 # same as above, but starts at root and works its way up
-for path in loop_path.parentDirs(fromRoot=true):
+for path in loop_path.parentDirs(fromRoot = true):
     echo path
 
 # Types of returns from below code:
