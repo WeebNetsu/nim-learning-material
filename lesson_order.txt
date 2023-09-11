@@ -43,7 +43,7 @@
 42. Working with XML [sequences, tables, functions]
 45. Strscans Module [If statements, re (not scripted yet)]
 47. Stats [Sequences]
-(INCOMPLETE) 48. FFI [Pragmas, Procedures]
+48. FFI [Pragmas, Procedures]
 nimble (package manager) (use NiGui as example https://nimble.directory/pkg/nigui)
 
 NOTE: When doing asynchttpserver, also display jester and prologue as alternatives to create an API

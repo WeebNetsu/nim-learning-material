@@ -1,3 +1,10 @@
 {
-	"cSpell.words": ["repr", "typedesc", "varargs"]
+	"cSpell.words": [
+		"cstring",
+		"discardable",
+		"importc",
+		"repr",
+		"typedesc",
+		"varargs"
+	]
 }
