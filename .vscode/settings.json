@@ -4,6 +4,7 @@
 		"discardable",
 		"importc",
 		"repr",
+		"threadpool",
 		"typedesc",
 		"varargs"
 	]
