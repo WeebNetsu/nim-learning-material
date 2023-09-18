@@ -95,7 +95,7 @@ proc sayHi(num: int) {.thread.} =
     echo "Hi from " & $num
 
 # example without a thread
-for i in 0..9:
+for i in 0 .. 5:
     sayHi(i)
 
 
@@ -129,4 +129,64 @@ sync()
 
 echo "After threads 2"
 
-# ! TO BE CONTINUED -- `Retrieving return values from the FlowVar type` in the book linked above
+
+# -- Getting a value from threads --
+
+# FlowVar is similar to the Future type, in it starts as an empty value
+var userInput: FlowVar[string] = spawn stdin.readLine()
+
+# see line 147
+# echo "Input: ", ^userInput  # will block the thread from continuing
+
+# this will constantly see if userInput has a value
+while not userInput.isReady:
+    echo "No input - will check again in 5 seconds"
+    sleep(5000)
+
+# ^ retrieves the value from a "Future"-like variable, in this case a FlowVar
+# however, note that ^ will block the thread from running until the variable
+# it is used on contains a value - so make sure to use .isReady before using this
+echo "Input: ", ^userInput
+
+# downloads example with threads
+# https://testfile.org/ - for example download files
+
+import httpclient, strutils
+
+# Utility procedure to extract the filename from a URL
+proc getFilenameFromURL(url: string): string =
+    return url.split("/")[^1]
+
+proc downloadFile(url: string) {.thread.} =
+    echo "Starting ", url
+    var client = newHttpClient()
+    var response = client.get(url)
+
+    if response.status == $Http200:
+        let body = response.body
+        echo "File downloaded successfully! ", url
+        # Save the downloaded content to a file
+        writeFile(getFilenameFromURL(url), body)
+    else:
+        echo "Failed to download file. Status code: ", response.status
+
+
+# Example usage
+let downloadLinks = [
+    "https://files.testfile.org/AUDIO/C/M4A/sample1.m4a", # 2mb
+    "https://files.testfile.org/anime.mp3",               # 4mb
+    "https://link.testfile.org/ihDc9s"                    # 40mb
+]
+
+var downloadThreads: array[len(downloadLinks), Thread[string]]
+
+for index, link in downloadLinks:
+    createThread(downloadThreads[index], downloadFile, link)
+joinThreads(downloadThreads)
+
+
+# -- Same as above, but using threadpool instead --
+for link in downloadLinks:
+    spawn downloadFile(link)
+
+sync()
