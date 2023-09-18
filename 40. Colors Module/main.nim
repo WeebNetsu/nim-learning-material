@@ -1,7 +1,7 @@
 import std/colors
 
 # This module allows you to do color handling in Nim
-#[ 
+#[
     list of available colors
 
     colAliceBlue = 15792383
@@ -144,7 +144,7 @@ import std/colors
     colWhiteSmoke = 16119285
     colYellow = 16776960
     colYellowGreen = 10145074
- ]#
+]#
 
 # this will give you 0xA52A2A
 echo colBrown

@@ -49,7 +49,7 @@ echo unidecode.unidecode("さようなら") # lol, almost like a better google t
 import std/wordwrap as wordwrap
 
 var b: string = "Hello! My name is Steve! I come from a land far in the east called Shubalubagust and it is a great place."
-echo wordwrap.wrapWords(b, maxLineWidth=20, splitLongWords=true) # applies word wrap to text
+echo wordwrap.wrapWords(b, maxLineWidth = 20, splitLongWords = true) # applies word wrap to text
 
 
 # DISTROS
@@ -117,14 +117,14 @@ echo captureBetween(text, 'e')
 # return whatever is between the first 'e' and first 'r' in the string
 echo captureBetween(text, 'e', 'r')
 # return whatever is between the first 'o' (starting at index 5) in the string and the end of the string
-echo captureBetween(text, 'o', start=5)
+echo captureBetween(text, 'o', start = 5)
 
 var c: float64
-# returns string length and converts the string to c float64 and
-# store it inside the 'c' variable
-# you also have parseBiggestInt, parseBin, parseChar, parseFloat, parseInt
-# there are c lot more in the docs, but they all do basically
-# the same thing, just with different types
+    # returns string length and converts the string to c float64 and
+    # store it inside the 'c' variable
+    # you also have parseBiggestInt, parseBin, parseChar, parseFloat, parseInt
+    # there are c lot more in the docs, but they all do basically
+    # the same thing, just with different types
 echo parseBiggestFloat("19.23532212", c)
 echo c
 
@@ -143,10 +143,10 @@ echo rand(1..5) # random number between 1 and 5
 echo rand(3.14) # random number between 0 & 3.14
 echo rand(int8) # random number that can fit in a integer of 8 bytes
 
-let a = @["Mark", "Jack", "Luke", "Nick"]
-echo sample(a) # returns random value from array, sets, sequences...
+let x = @["Mark", "Jack", "Luke", "Nick"]
+echo sample(x) # returns random value from array, sets, sequences...
 
-var b = [1, 2, 3, 4, 5, 6, 7, 8] # has to be var to be reordered
-shuffle(b) # reorder sequence in random order
+var z = [1, 2, 3, 4, 5, 6, 7, 8] # has to be var to be reordered
+shuffle(z) # reorder sequence in random order
 
-echo b
+echo z

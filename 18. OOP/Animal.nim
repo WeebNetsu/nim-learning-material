@@ -1,5 +1,5 @@
 type
-    Animal* = object # normal object
+    Animal* = object  # normal object
         name*: string # these are public variables
         alive*: bool
         fullness*: int

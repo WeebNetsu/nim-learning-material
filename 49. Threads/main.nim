@@ -33,7 +33,8 @@
     Garbage collector: A garbage collector automatically manages memory allocation and deallocation. It helps programmers avoid the need for manual memory management, (By memory I mean RAM) which can be error-prone and time-consuming. The garbage collector automatically identifies and frees up memory that is no longer needed by the program, making memory management easier for developers. C has no garbage collector and you need to free up memory yourself using malloc and free, however most languages do have a garbage collector for ease of use.
  ]#
 
-# * Need to add --threads:on to compile
+# * Need to add `--threads:on -d:ssl` to compile
+# -d:ssl is only for the last part of the tutorial, but add it from the start anyways
 
 import std/os
 

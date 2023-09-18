@@ -5,15 +5,15 @@ let age = 19
 
 # the %* {} allows you to create a JSON object
 let convertedJSON = %* [
-    { # this can also be on one line, I split it so it's easier to read
-        "name": "Steve", 
+    {                    # this can also be on one line, I split it so it's easier to read
+        "name": "Steve",
         "age": age,
         "hobbies": ["Eating", "Coding"],
         "username": nil, # same as null value in json
         "type": "human"
     },
     {
-        "name": "Jack", 
+        "name": "Jack",
         "age": 24,
         "hobbies": ["Hunting"],
         "username": "HunterBoy247",
@@ -34,7 +34,7 @@ echo jsonAge + 20
 
 echo parsed["hobbies"][1].getStr() # access arrays
 # below code will add "old" field to json
-# we usse "%" to convert normal Nim type to json type
+# we use "%" to convert normal Nim type to json type
 parsed.add("old", %false)
 echo "I am old? ", parsed["old"].getBool()
 echo parsed.contains("username") # check if key exists in json object
@@ -59,7 +59,7 @@ type
         # use sequence, since we don't know how many elements is in the array
         hobbies: seq[string]
         username: Option[string] # since username may not exist
-        `type`: string # use `` to allow for preserved words in nim
+        `type`: string           # use `` to allow for preserved words in nim
 
 let jack = convertedJSON[1].to(Person) # convert JSON to Person object
 echo jack.hobbies
@@ -67,4 +67,4 @@ echo jack.`type` # access Nim preserved word in json
 
 let f = parseFile("./users.json") # parse json from a file
 echo f
-echo f.pretty(4) # prettyfy json (indentation of 4 spaces, default = 2)
+echo f.pretty(4) # prettify json (indentation of 4 spaces, default = 2)

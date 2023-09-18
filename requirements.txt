@@ -1,1 +1,1 @@
-Nim v1.6 (or higher, but you can also follow along mostly with v1.4)
+Nim v2.0 (or higher)

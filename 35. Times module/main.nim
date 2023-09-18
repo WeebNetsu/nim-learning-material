@@ -216,14 +216,14 @@ echo between(parse("2002-08-05", "yyyy-MM-dd"), parse("2021-11-23", "yyyy-MM-dd"
 # echo $d
 
 # create duration
-var b = initDuration(weeks=3, days=2, hours=4)
+var b = initDuration(weeks = 3, days = 2, hours = 4)
 echo $b # $ -> convert duration to string
 echo b * 4 # will times to the current time
 b *= 2 # (6 weeks, 4 days, 8 hours)
 echo b
 echo a + b # takes a DateTime object and adds duration to it
 
-let d = initDuration(weeks=5, days=1, seconds=44)
+let d = initDuration(weeks = 5, days = 1, seconds = 44)
 echo d >= b # will check if date, duration or time interval is larger or equal to one of the same TYPE
 # you can do all comparing with ==, >, >=, < ...
 
@@ -234,12 +234,12 @@ echo inDays(d)
 echo toParts(d) # converts it into an array
 echo toParts(d)[Weeks]
 
-echo initDuration(minutes=5) div 3 # returns 5 min divided by 3
+echo initDuration(minutes = 5) div 3 # returns 5 min divided by 3
 
 # create time interval
 # Note that TimeInterval doesn't represent a fixed duration of time, since the duration of some units depend on the context (e.g a year can be either 365 or 366 days long). The non-fixed time units are years, months, days and week.
 # Note that TimeInterval's returned from the times module are never normalized. If you want to normalize a time unit, Duration should be used instead.
-let c = initTimeInterval(years = 3, nanoseconds = 400, minutes=23)
+let c = initTimeInterval(years = 3, nanoseconds = 400, minutes = 23)
 echo $c # $ -> convert to str
 # you can add, subtract and times -> intervals, durations and datetimes
 
@@ -285,6 +285,6 @@ echo toUnix(g) # this converts it to unix time
 # above will return the seconds passed since 1970 until 2000
 echo fromUnix(toUnix(g)) # this converts unix to time format
 
-echo isLeapYear(2000) # true if leapyear
+echo isLeapYear(2000) # true if leap year
 
 echo "Time it took to finish entire program: ", cpuTime() - e

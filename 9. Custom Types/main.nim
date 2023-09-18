@@ -5,7 +5,7 @@ type
         species: string
         edible: bool
     MyRange = range[0..5] # custom type that can only hold values 0-5
-    Dog = object # basic objects in nim
+    Dog = object     # basic objects in nim
         name: string # unlike with tuples, it is mandatory to declare field names
         age: int
 

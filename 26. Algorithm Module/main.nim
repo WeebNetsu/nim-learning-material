@@ -1,13 +1,13 @@
 import algorithm
 
-var 
+var
     a: array[6, int]
     b: array[5, int] = [5, 1, 8, 9, 7]
     c: array[5, int] = [5, 1, 8, 9, 7]
-# the below will fill the array with a specific value
-# fill(where to start, how many to fill, what to fill it with)
-# the below will create [0, 9, 9, 0, 0, 0], because the array has 6 spaces open
-# we start at index 1 (note, not 0), then for the next 2 spaces we fill with the value 9
+ # the below will fill the array with a specific value
+ # fill(where to start, how many to fill, what to fill it with)
+ # the below will create [0, 9, 9, 0, 0, 0], because the array has 6 spaces open
+ # we start at index 1 (note, not 0), then for the next 2 spaces we fill with the value 9
 a.fill(1, 2, 9)
 echo a
 

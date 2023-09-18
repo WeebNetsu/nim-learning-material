@@ -5,7 +5,7 @@ var
     c = [1, 2, 3, 4, 5, 6, 7]
     # NOTE: You cannot declare an empty array, without defining the length
     e: array[4, bool]
-    z: array[2, array[3, int]] = [ # multi dementional array
+    z: array[2, array[3, int]] = [ # multi dimensional array
         [1, 2, 3],
         [4, 5, 6]
     ]
@@ -26,4 +26,4 @@ echo c[1 ..< 3] # all from index 1-2
 c[1] = 78 # change item at that index
 echo c
 
-echo z[0][2] # access item in multi dimentional array
+echo z[0][2] # access item in multi dimensional array

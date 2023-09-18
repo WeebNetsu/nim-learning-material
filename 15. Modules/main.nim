@@ -18,7 +18,7 @@ say_hello("Nick")
 
 from custom/myOtherModule import draw_line # import specific items from module
 
-draw_line() 
+draw_line()
 
 import example/[mod1, mod2] # import multiple modules from the same directory
 

@@ -1,8 +1,8 @@
-var 
+var
     # the below are called bitsets
     # these types of sets are limited and can only store very small data types
     # (Like characters), this is for performance reasons...
-    my_set: set[char] = {'a' .. 'z', 'A' .. 'Z', '0' .. '9'} # store all the letters in the alphabed and all numbers (as characters)
+    my_set: set[char] = {'a' .. 'z', 'A' .. 'Z', '0' .. '9'} # store all the letters in the alphabet and all numbers (as characters)
 
 echo my_set
 

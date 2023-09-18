@@ -23,7 +23,7 @@ of Color.GREEN:
     echo "Text Color is Green"
 of Color.Blue:
     echo "Text Color is Blue"
-    # NO else statement nedded, since it covers all availible cases
+    # NO else statement needed, since it covers all available cases
 
 
 case text_color

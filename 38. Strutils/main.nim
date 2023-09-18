@@ -33,7 +33,7 @@ a.addf(" My name is $1", ["Nick"])
 echo a
 
 # below aligns text to right with 30 characters (above text length is
-# 28 characters, so it will add 2 spaces to the strat of the text)
+# 28 characters, so it will add 2 spaces to the start of the text)
 echo align(a, 30)
 # same as above, but text will be aligned to the left
 echo alignLeft(a, 35) & "is aligned"

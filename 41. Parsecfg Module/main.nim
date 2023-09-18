@@ -48,14 +48,14 @@ open(p, f, CONF_FILE)
 
 # read the file
 while true:
-    #[ 
+    #[
     cfgEof,             ## end of file reached
     cfgSectionStart,    ## a `[section]` has been parsed
     cfgKeyValuePair,    ## a `key=value` pair has been detected
     cfgOption,          ## a `--key=value` command line option
     cfgError            ## an error occurred during parsing
-     ]#
-    
+        ]#
+
     # go to the next line
     var e = next(p)
     case e.kind # get event kind

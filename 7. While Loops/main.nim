@@ -5,7 +5,7 @@ while x > 10:
 
     if x == 15:
         continue # skip iteration
-    
+
     echo "loop! ", x
 
     if x == 12:

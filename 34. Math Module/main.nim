@@ -20,7 +20,7 @@ echo floor(2.9)
 echo ceil(2.9)
 echo trunc(1.75) # Truncate
 echo isPowerOfTwo(16) # Powers of Two
-# echo copySign(10.0, -1.0) # will return -10.0 (copied the '-' sign), ONLY availibe in NEWER versions of Nim
+# echo copySign(10.0, -1.0) # will return -10.0 (copied the '-' sign), ONLY available in NEWER versions of Nim
 echo cumsummed([1, 2, 3, 4]) # calculates the combined values of array: [1, 3, 6, 10] (1+2=3; 3+3=6; 6+4=10;)
 echo radToDeg(1.57079633) # Radians to Degrees
 echo degToRad(90.2) # converts degrees to radians
@@ -37,7 +37,7 @@ echo sin(10.0)
 echo tan(10.0)
 # echo 2.82842712474619 * 2.82842712474619 # this will return 8 (helpful for below)
 echo cbrt(8.0) # Get Cube root of value - basically floor(sqrt(8))
-# echo almostEqual(PI, 3.14159265358979) # gets if floats are almost equal to each other (only on newwer versions of Nim)
+# echo almostEqual(PI, 3.14159265358979) # gets if floats are almost equal to each other (only on newer versions of Nim)
 echo binom(6, 2) # Calculates the binomial coefficient, whatever that is
 
 echo fac(4) # calculates factorial of positive integer

@@ -31,7 +31,8 @@ echo len(addressElement)
 addressElement.delete(2) # deletes country
 
 # create the XML tree
-var myXML = newXmlTree("userData", [nameElement, emailElement, addressElement], {"secure": "no", "class": "user data-holder"}.toXmlAttributes)
+var myXML = newXmlTree("userData", [nameElement, emailElement, addressElement], {"secure": "no",
+        "class": "user data-holder"}.toXmlAttributes)
 
 # use $ to convert to string
 echo $myXML
@@ -42,11 +43,11 @@ echo xmlHeader # gives generally used XML header
 echo myXML[0]
 
 # get amount of attributes on xml node
-echo myXML.attrsLen() 
+echo myXML.attrsLen()
 # get the address element and all its children
 echo myXML.child("address")
 
-# will find all of the <email> tags and return a sequence 
+# will find all of the <email> tags and return a sequence
 echo myXML.findAll("email")
 
 # clears an xml node of all its children

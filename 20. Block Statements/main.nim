@@ -7,8 +7,8 @@ block blockName:
         if i == 50:
             echo i
             break blockName # break out of the block statement
-        
-        if i == 70: # won't execute, since the forloop broke before it got here
+
+        if i == 70: # won't execute, since the for loop broke before it got here
             echo i
 
 let x = 22

@@ -5,9 +5,9 @@ import std/terminal # allows you to do cool stuff with the terminal
 # the below will style the text it displays
 stdout.styledWriteLine(fgRed, "This text is red") # make text color red
 stdout.styledWriteLine(fgWhite, bgBlue, "This text is white with a blue background")
-stdout.styledWriteLine({ styleBright }, "Bright/Bold text")
-stdout.styledWriteLine({ styleBlink }, "Blinking text")
-stdout.styledWriteLine({ styleUnderscore }, "Underscored text")
+stdout.styledWriteLine({styleBright}, "Bright/Bold text")
+stdout.styledWriteLine({styleBlink}, "Blinking text")
+stdout.styledWriteLine({styleUnderscore}, "Underscored text")
 # the above will only affect that one line of text
 
 # the below will affect any text that gets displayed to the terminal after it
@@ -22,7 +22,7 @@ echo "hello!"
 resetAttributes() # resets all attributes to their normal values
 
 #[ 
-    List of availible colors & styles:
+    List of available colors & styles:
         Background Colors:
             bgBlack, bgRed, bgGreen, bgYellow, bgBlue, bgMagenta, bgCyan, bgWhite, bgDefault
         Foreground Colors:

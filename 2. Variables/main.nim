@@ -24,8 +24,8 @@ name = "Nick" # you can reassign variables
 echo "New name: ", name
 
 var my_var: string = "Hello"
-# ! The below is the same as the above!!!! Nim ignores '_'!
-# var myVar: string = "World"
+    # ! The below is the same as the above!!!! Nim ignores '_'!
+    # var myVar: string = "World"
 
 echo mYVAR # works fine.
 # NOTE: Myvar != my_var, these are 2 DIFFERENT variables, if the first character is uppercase, it's a different character
@@ -56,7 +56,7 @@ const GO = c + 10 # this is valid because c is also a constant
 echo GO
 
 let ABA = a + 10 # let is the same as const, but it gets created on runtime, the same as variables
-# thus a can be used inside of ABA, since let and var are created at runtime
+                 # thus a can be used inside of ABA, since let and var are created at runtime
 echo ABA
 # it is recommended to use let wherever possible
 
