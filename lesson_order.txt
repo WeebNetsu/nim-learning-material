@@ -30,10 +30,8 @@
 [FILMED]46. Regex
 [FILMED]33. OS Module [loops, arrays, sequences, tables, tuples]
 [FILMED]32. Terminal
-23. Templates [If Statements, Procedures, Working With Files]
-24. Pragmas [Procedures, Math]
-36. Options Module [if statements, Procedures, loops]
-21. Working with JSON [OOP, arrays, sequences, tables, tuples, Options Module, Working With Files]
+[FILMED]36. Options Module [if statements, Procedures, loops]
+[FILMED]21. Working with JSON [OOP, arrays, sequences, tables, tuples, Options Module, Working With Files]
 43. Asynchronous Code [JSON, sequences, OOP, procedures]
 27. URI Module
 35. Times Module
@@ -43,6 +41,8 @@
 42. Working with XML [sequences, tables, functions]
 45. Strscans Module [If statements, re (not scripted yet)]
 47. Stats [Sequences]
+23. Templates [If Statements, Procedures, Working With Files]
+24. Pragmas [Templates, Procedures, Math]
 48. FFI [Pragmas, Procedures]
 49. Threads [Pragmas, Procedures, Tuples, Arrays, HttpClient]
 nimble (package manager) (use NiGui as example https://nimble.directory/pkg/nigui)
