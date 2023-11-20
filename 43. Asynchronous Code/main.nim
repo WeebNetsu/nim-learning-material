@@ -1,6 +1,8 @@
 import std/[asyncdispatch, httpclient, json, options]
 
 # compile: nim c -r -d:ssl main.nim
+# you need to provide -d:ssl if you want to be able to query HTTPS websites
+# you can query HTTP websites without -d:ssl
 
 type
     QuoteAuthorObj = object
@@ -33,7 +35,7 @@ proc fetchQuotes(): Future[seq[QuoteObj]] {.async.} =
     var client = newAsyncHttpClient()
     # we make a request to this API endpoint
     # (more info https://github.com/WeebNetsu/ytapi.stevesteacher.com)
-    var response = await client.get("http://ytapi.stevesteacher.com/quotes")
+    var response = await client.get("https://ytapi.stevesteacher.com/quotes")
     # we get the entire response, but we are primarily interested in the body
     var body = await response.body
     # we can then parse the body into pure JSON. We can then use .to to
