@@ -45,6 +45,6 @@
 24. Pragmas [Templates, Procedures, Math]
 48. FFI [Pragmas, Procedures]
 49. Threads [Pragmas, Procedures, Tuples, Arrays, HttpClient]
-nimble (package manager) (use NiGui as example https://nimble.directory/pkg/nigui)
+50. Nimble
 
 NOTE: When doing asynchttpserver, also display jester and prologue as alternatives to create an API
