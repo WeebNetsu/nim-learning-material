@@ -37,8 +37,8 @@
 [FILMED]35. Times Module
 [FILMED]40. Colors Module [If Statements]
 [FILMED]41. Parsecfg Module [Loops, case statements]
-44. Working with CSV [sequences]
-42. Working with XML [sequences, tables, functions]
+[FILMED]44. Working with CSV [sequences]
+[FILMED]42. Working with XML [sequences, tables, functions]
 45. Strscans Module [If statements, re (not scripted yet)]
 47. Stats [Sequences]
 23. Templates [If Statements, Procedures, Working With Files]
