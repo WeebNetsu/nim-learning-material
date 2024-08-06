@@ -1,3 +1,5 @@
+# TODO INCOMPLETE
+
 # nim c -r --hints:off -d:ssl main.nim
 import std/[net]
 
@@ -8,16 +10,16 @@ import std/[net]
 
 # --- Connecting to a server
 let socket = newSocket()
-socket.connect("google.com", Port(80)) # connect to http port 80
+socket.connect("ytapi.stevesteacher.com", Port(80)) # connect to http port 80
 socket.close() # stop a socket from running
 
 # can use below for ssl connections
-let 
+let
     ctx = newContext()
     sslSocket = newSocket()
 
 wrapSocket(ctx, sslSocket)
-sslSocket.connect("google.com", Port(443)) # connect to https port 443
+sslSocket.connect("ytapi.stevesteacher.com", Port(443)) # connect to https port 443
 sslSocket.close()
 
 # --- Creating a server
@@ -28,11 +30,12 @@ serverSocket.bindAddr(Port(1234))
 # start listening for communication
 serverSocket.listen()
 
-var 
+var
     client: Socket
     address = ""
 
 while true:
     # accept incoming connections
     serverSocket.acceptAddr(client, address)
+    # you can use `curl localhost:1234` to see an output - or even better run another nim program to connect to it using socket.connect
     echo "Client connected from: ", address
