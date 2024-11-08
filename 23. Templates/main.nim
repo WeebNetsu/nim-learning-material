@@ -1,6 +1,6 @@
 # templates do not return anything, they substitute for something else, in this case !! = !=
 # fun fact: !=, >, >= and in are all templates
-# untyped - parameters can be passed in before they're even assigned a value
+# untyped - parameters can be passed in before they're even assigned a value, since it does not enforce type checking
 template `!!` (a, b: untyped): untyped =
     not(a == b)
 
@@ -35,3 +35,27 @@ template withFile(f, fileName, mode, actions: untyped): untyped =
 withFile(textFile, "myFile.txt", fmRead):
     # actions is whatever is being passed in here
     echo textFile.readLine()
+
+
+# Define a mixed template that combines typed and untyped parameters
+template `swapIfGreater`(a, b: untyped, T: typed) =
+    # a and b are untyped, so in this case the template will work with both strings and integers
+    # T being passed in is the type we want to enforce the check against
+  if a > b:
+    #  we assign a temporary variable to store the original value of a
+    let temp: T = a
+    # we swap the 2 variables
+    a = b
+    b = temp
+
+var num1 = 10
+var num2 = 5
+
+swapIfGreater(num1, num2, int)
+echo (num1, num2)  # Output: (5, 10)
+
+var str1 = "world"
+var str2 = "hello"
+
+swapIfGreater(str1, str2, string)
+echo (str1, str2)  # Output: (hello, world)
