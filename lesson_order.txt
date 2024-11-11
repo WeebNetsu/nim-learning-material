@@ -31,7 +31,7 @@
 [FILMED]33. OS Module [loops, arrays, sequences, tables, tuples]
 [FILMED]32. Terminal
 [FILMED]36. Options Module [if statements, Procedures, loops]
-[FILMED][FILMED]21. Working with JSON [OOP, arrays, sequences, tables, tuples, Options Module, Working With Files]
+[FILMED]21. Working with JSON [OOP, arrays, sequences, tables, tuples, Options Module, Working With Files]
 [FILMED]43. Asynchronous Code [JSON, sequences, OOP, procedures]
 [FILMED]27. URI Module
 [FILMED]35. Times Module
@@ -39,13 +39,13 @@
 [FILMED]41. Parsecfg Module [Loops, case statements]
 [FILMED]44. Working with CSV [sequences]
 [FILMED]42. Working with XML [sequences, tables, functions]
-45. Strscans Module [If statements, re (not scripted yet)]
-47. Stats [Sequences]
-23. Templates [If Statements, Procedures, Working With Files]
+[FILMED]45. Strscans Module [If statements, re (not scripted yet)]
+[FILMED]47. Stats [Sequences]
+[FILMED]23. Templates [If Statements, Procedures, Working With Files]
 24. Pragmas [Templates, Procedures, Math]
 48. FFI [Pragmas, Procedures]
 49. Threads [Pragmas, Procedures, Tuples, Arrays, HttpClient]
-52. (INCOMPLETE) Logging
+52. Logging
 51. (INCOMPLETE) Sockets
 50. Nimble
 

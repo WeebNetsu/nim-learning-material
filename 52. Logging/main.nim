@@ -46,7 +46,10 @@ error("another error")
 # regular info log
 info("nothing of interest") # Will not be written to errors.log
 debug("developer does something")
-fatal("eish, we end now")
+
+removeHandler(logger) # remove a handler
+fatal("only in file") # will only be in file, since we removed the console logger handler
+
 
 # you can change how the log should be displayed
 logger = newConsoleLogger(fmtStr = "[$time] - $levelname: ")
@@ -68,4 +71,21 @@ logger.log(lvlError, "more info logger")
 logger = newConsoleLogger(fmtStr = verboseFmtStr)
 logger.log(lvlInfo, "even more info logger")
 
-# TO BE CONTINUED https://nim-lang.org/docs/logging.html#12
+echo defaultFilename() # default name of the path, including the file name that errors are being logged to
+
+# get global log filter (level logs will log at by default)
+echo getLogFilter()
+
+setLogFilter(Level.lvlDebug)
+echo getLogFilter() # will now be debug
+
+
+# when maxLines is reached, it will create a new file to store the next logs in
+let rollingFileLogger = newRollingFileLogger("rolling-errors.log", levelThreshold = lvlAll, maxLines = 5)
+
+rollingFileLogger.log(lvlInfo, "one")
+rollingFileLogger.log(lvlInfo, "two")
+rollingFileLogger.log(lvlInfo, "three")
+rollingFileLogger.log(lvlInfo, "four")
+rollingFileLogger.log(lvlInfo, "five")
+rollingFileLogger.log(lvlInfo, "six")
