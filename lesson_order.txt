@@ -43,6 +43,7 @@
 [FILMED]47. Stats [Sequences]
 [FILMED]23. Templates [If Statements, Procedures, Working With Files]
 24. Pragmas [Templates, Procedures, Math]
+53. (INCOMPLETE) User Defined Pragmas [Pragmas]
 48. FFI [Pragmas, Procedures]
 49. Threads [Pragmas, Procedures, Tuples, Arrays, HttpClient]
 52. Logging
