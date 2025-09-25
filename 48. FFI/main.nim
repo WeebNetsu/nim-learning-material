@@ -24,8 +24,23 @@ printf("My name is %s and I am %d years old!\n", "Jack", 25)
 # function you are trying to use
 proc coolPrint(format: cstring): cint {.importc: "printf", varargs, header: "stdio.h".}
 
- # have to use discard, since I did not add discardable to pragmas
+# have to use discard, since I did not add discardable to pragmas
 discard coolPrint("Another print for %s\n", "Mike")
+
+
+#  note it is important to compile with nim cpp and not nim c since we want to use from C++
+# importcpp: the function name, header: the file to search for function
+proc speak(name: cstring) {.importcpp: "speakCpp(@)", header: "methods.cpp".}
+
+speak("Rock 'n Roll")
+
+# using the same name as the actual function in the C++ file is optional
+proc sumCpp(x: int, y: int): cint {.importcpp: "sumCpp(@)", header: "methods.cpp".}
+
+# convert cint to int
+let res: int = int(sumCpp(10, 15))
+
+echo "RESULT: ", $res
 
 # couple of C types in Nim
 #[ cstring
